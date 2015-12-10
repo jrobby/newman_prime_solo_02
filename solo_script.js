@@ -76,7 +76,7 @@ function calculateSTI(array1){
   }
 
   newArray[1] = bonus;
-  newArray[2] = Math.round(baseSalary * (1 + bonus));
+  newArray[2] = baseSalary * (1.0 + bonus);
   newArray[3] = Math.round(baseSalary * bonus);
 
 
@@ -85,7 +85,8 @@ function calculateSTI(array1){
 //   console.log(newArray[2]);
 //   console.log(newArray[3]);
 
-  console.log(newArray[0] + "  " + newArray[1] + " " + newArray[2] + " " + newArray[3]);
+
+  console.log(newArray[0] + "  " + newArray[1] + "  " + newArray[2] + "  " + newArray[3]);
   
   return newArray;
 }
@@ -99,7 +100,6 @@ function getYearAdjustment(employeeNumber){
   }
   return yearAdjustment;
 }
-
 
 
 
